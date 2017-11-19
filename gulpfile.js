@@ -13,3 +13,13 @@ gulp.task('sass', function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('src/css'));
 });
+
+// Javascripts build defaults for now
+gulp.task('js', function() {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/popper.js/dist/umd/popper.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.min.js'
+    ])
+        .pipe(gulp.dest('src/js'));
+});
