@@ -23,8 +23,9 @@
   "homepage": "https://github.com/setjmp2013/newweb2017#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.13.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
