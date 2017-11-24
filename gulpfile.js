@@ -28,7 +28,7 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
-// fonts folder
+// fonts folder (only font-awesome at this time)
 gulp.task('fonts', function(){
     gulp.src(['node_modules/font-awesome/fonts/fontawesome-webfont.*'])
         .pipe(gulp.dest('src/fonts'));
