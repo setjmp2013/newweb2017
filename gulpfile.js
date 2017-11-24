@@ -28,6 +28,12 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
+// fonts folder
+gulp.task('fonts', function(){
+    gulp.src(['src/fonts/fontawesome-webfont.*'])
+        .pipe(gulp.dest('src/fonts'));
+});
+
 // Development web server/browserSync
 gulp.task('serve', ['sass'], function(){
     browserSync.init({server: "./src"});
@@ -37,4 +43,4 @@ gulp.task('serve', ['sass'], function(){
 });
 
 // Default/Main
-gulp.task('default', ['js', 'serve']);
+gulp.task('default', ['js', 'fonts', 'serve']);
