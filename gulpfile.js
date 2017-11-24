@@ -30,7 +30,7 @@ gulp.task('js', function() {
 
 // fonts folder
 gulp.task('fonts', function(){
-    gulp.src(['src/fonts/fontawesome-webfont.*'])
+    gulp.src(['node_modules/font-awesome/fonts/fontawesome-webfont.*'])
         .pipe(gulp.dest('src/fonts'));
 });
 
