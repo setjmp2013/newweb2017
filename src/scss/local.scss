@@ -1,0 +1,22 @@
+// Remove annoying container-fluid padding left/right in header/footer.
+#topbar,
+#bottombar {padding-left:0;padding-right:0;}
+
+// Make sure the dropdown doesn't extend off the right of the screen,
+// by making it left :-D
+#navbar1 {
+    div[aria-labelledby="dropdownServices"] {
+        left:unset;
+        right:0;
+
+        a:hover {
+            background:#444;
+            color:#ddd;
+        }
+    }
+    a.dropdown-toggle:after {
+        position: relative;
+        top:3px;
+        left:-1px;
+    }
+}

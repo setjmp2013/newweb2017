@@ -11,15 +11,54 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <!-- Local Styles -->
+        <link rel="stylesheet" href="/css/local.min.css">
     </head>
     <body>
-        <div class="container">
+        <header id="topbar" class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">NEWWEB2017</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                                <a href="#" class="dropdown-item">System Administration</a>
+                                <a href="#" class="dropdown-item">WordPress&reg;</a>
+                                <a href="#" class="dropdown-item">Internet Presence Consultation</a>
+                                <a href="#" class="dropdown-item">Ask Me</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="content">
             <div class="row">
-                <div class="col">
-                    <h1 class="display-4">The Beginning is Near!</h1>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1>Bootstrap 4.x based site startup</h1>
+                    <p class="lead">Basics in place to build...</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </main>
+        <footer id="bottombar" class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <p class="bg-dark text-light">Where the Copyright &copy; might go...</p>
                 </div>
             </div>
-        </div>
+        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
